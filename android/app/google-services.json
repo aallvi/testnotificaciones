@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "444162633334",
+    "project_id": "notificationreactnative-e2742",
+    "storage_bucket": "notificationreactnative-e2742.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444162633334:android:29f24cc418792e7bd07957",
+        "android_client_info": {
+          "package_name": "com.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444162633334-pgtu60om9196qa9ud5k09b0gkhc8sndp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNJjHL-5QKPs2Xmdx-_rkFxALGRqC4zJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444162633334-pgtu60om9196qa9ud5k09b0gkhc8sndp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
