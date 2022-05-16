@@ -38,7 +38,7 @@ const App = () => {
         body: 'Main body content of the notification',
         android: {
           channelId,
-           // optional, defaults to 'ic_launcher'.
+          //  optional, defaults to 'ic_launcher'.
         },
       });
     }
