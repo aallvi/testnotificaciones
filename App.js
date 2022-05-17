@@ -1,9 +1,17 @@
 import React from 'react'
-import { View, Button,Text } from 'react-native';
+import { View, Button,Text , SafeAreaView} from 'react-native';
 import notifee from '@notifee/react-native';
 import messaging from '@react-native-firebase/messaging';
 
 const App = () => {
+
+  async function requestUserPermission() {
+    const authorizationStatus = await messaging().requestPermission();
+  
+    if (authorizationStatus) {
+      console.log('Permission status:', authorizationStatus);
+    }
+  }
 
 
    const onDisplayRemoteNotification = async () => {
@@ -46,7 +54,7 @@ const App = () => {
 
   return (
     <>
-
+   <SafeAreaView>
     <View>
       <Button title="Display Notification" onPress={() => onDisplayLocalNotification()} />
     </View>
@@ -58,6 +66,7 @@ const App = () => {
 
       <Button title="Display Remote Notification" onPress={() => onDisplayRemoteNotification()} />
     </View>
+    </SafeAreaView>
     </>
   )
 }
